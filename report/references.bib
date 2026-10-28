@@ -1,0 +1,154 @@
+@dataset{decanioESAAnomalyDataset2024,
+  title = {{{ESA Anomaly Dataset}}},
+  author = {De Canio, Gabriele and Kotowski, Krzysztof and Haskamp, Christoph},
+  namea = {Andrzejewski, Jacek and Ruszczak, Bogdan and Nalepa, Jakub and Lakey, Daniel and Collins, Peter and Kolmas, Aybike and Bartesaghi, Mauro and Martínez-Heras, Jose},
+  nameatype = {collaborator},
+  date = {2024-06-25},
+  publisher = {European Space Agency},
+  doi = {10.5281/ZENODO.12528696},
+  url = {https://zenodo.org/doi/10.5281/zenodo.12528696},
+  urldate = {2026-10-28},
+  abstract = {ESA Anomaly Dataset is the first large-scale, real-life satellite telemetry dataset with curated anomaly annotations originated from three ESA missions. We hope that this unique dataset will allow researchers and scientists from academia, research institutes, national and international space agencies, and industry to benchmark models and approaches on a common baseline as well as research and develop novel, computational-efficient approaches for anomaly detection in satellite telemetry data. The dataset results from the work of an 18-month project carried by an industry Consortium composed of Airbus Defence and Space, KP Labs and the European Space Agency’s European Space Operations Centre. The project, funded by the European Space Agency (ESA), is part of the Artificial Intelligence for Automation (A²I) Roadmap (De Canio et al., 2023), a large endeavour started in 2021 to automate space operations by leveraging artificial intelligence. Further details can be found on the arXiv and Github. ReferencesDe Canio, G. et al. (2023) Development of an actionable AI roadmap for automating mission operations. In, 2023 SpaceOps Conference. American Institute of Aeronautics and Astronautics, Dubai, United Arab Emirates.},
+  langid = {english},
+  version = {1.0},
+  keywords = {anomaly dataset,mission operations},
+  file = {/Users/lucasoliveira/Zotero/storage/3588QYWE/De Canio et al. - 2024 - ESA Anomaly Dataset.pdf}
+}
+
+@online{lanFoundationModelsZeroShot2026,
+  title = {Towards {{Foundation Models}} for {{Zero-Shot Time Series Anomaly Detection}}: {{Leveraging Synthetic Data}} and {{Relative Context Discrepancy}}},
+  shorttitle = {Towards {{Foundation Models}} for {{Zero-Shot Time Series Anomaly Detection}}},
+  author = {Lan, Tian and Le, Hao Duong and Li, Jinbo and He, Wenjun and Wang, Meng and Liu, Chenghao and Zhang, Chen},
+  date = {2026-05-29},
+  eprint = {2509.21190},
+  eprinttype = {arXiv},
+  eprintclass = {cs.LG},
+  doi = {10.48550/arXiv.2509.21190},
+  url = {http://arxiv.org/abs/2509.21190},
+  urldate = {2026-10-28},
+  abstract = {Time series anomaly detection(TSAD) is a critical task, but developing models that generalize to unseen data in a zero-shot manner remains challenging. Existing foundation models for TSAD often rely on reconstruction-error scoring at inference time, which can miss subtle anomalies that are well reconstructed and can falsely flag complex but normal patterns in unseen domains. We introduce TimeRCD, a foundation model for TSAD built on Relative Context Discrepancy (RCD), a pre-training paradigm that trains the model to detect anomalies by comparing a query pattern with its surrounding context. This relational formulation, implemented with a standard Transformer architecture, enables the model to infer normality from the input context rather than relying on fixed global normal patterns. We further construct a large-scale synthetic corpus with context-dependent anomaly labels to provide supervised pre-training signals for RCD. Experiments across diverse benchmarks show that TimeRCD outperforms existing general-purpose and anomaly-specific foundation models in most zero-shot TSAD settings, while remaining competitive with dataset-specific full-shot baselines. These results provide empirical evidence that RCD is an effective direction for building robust and generalizable TSAD models.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/lucasoliveira/Zotero/storage/R7YYSU9U/Lan et al. - 2026 - Towards Foundation Models for Zero-Shot Time Series Anomaly Detection Leveraging Synthetic Data and.pdf}
+}
+
+@article{liuElephantRoomReliable,
+  title = {The {{Elephant}} in the {{Room}}: {{Towards A Reliable Time-Series Anomaly Detection Benchmark}}},
+  author = {Liu, Qinghua and Paparrizos, John},
+  abstract = {Time-series anomaly detection is a fundamental task across scientific fields and industries. However, the field has long faced the “elephant in the room:” critical issues including flawed datasets, biased evaluation measures, and inconsistent benchmarking practices that have remained largely ignored and unaddressed. We introduce the TSB-AD to systematically tackle these issues in the following three aspects: (i) Dataset Integrity: with 1070 high-quality time series from a diverse collection of 40 datasets (doubling the size of the largest collection and four times the number of existing curated datasets), we provide the first large-scale, heterogeneous, meticulously curated dataset that combines the effort of human perception and model interpretation; (ii) Measure Reliability: by revealing issues and biases in evaluation measures, we identify the most reliable and accurate measure, namely, VUS-PR for anomaly detection in time series to address concerns from the community; and (iii) Comprehensive Benchmarking: with a broad spectrum of 40 detection algorithms, from statistical methods to the latest foundation models, we perform a comprehensive evaluation that includes a thorough hyperparameter tuning and a unified setup for a fair and reproducible comparison. Our findings challenge the conventional wisdom regarding the superiority of advanced neural network architectures, revealing that simpler architectures and statistical methods often yield better performance. The promising performance of neural networks on multivariate cases and foundation models on point anomalies highlights the need for further advancements in these methods. We open-source the benchmark at https://github.com/TheDatumOrg/TSB-AD to promote further research.},
+  langid = {english},
+  file = {/Users/lucasoliveira/Zotero/storage/95Z47IM7/Liu and Paparrizos - The Elephant in the Room Towards A Reliable Time-Series Anomaly Detection Benchmark.pdf}
+}
+
+@article{murphyGroundOrbitEnhancing,
+  title = {From {{Ground}} to {{Orbit}}: {{Enhancing Satellite Autonomy With AI-Powered Anomaly Detection}}},
+  author = {Murphy, James and Wang, Fangyijie and Qureshi, Muhammad Deedahwar Mazhar and Namee, Brian Mac},
+  abstract = {Recent advances in space technology have prompted a surge in the deployment of small satellite constellations by companies such as Starlink and OneWeb. Now numbering in the thousands, these constellations have significantly increased the burden on satellite operators who must monitor and manage them to ensure their safe and reliable functioning. In response to this heightened operational demand, autonomous small satellite operations have become a focal point for investment, innovation and exploration. The latest hardware breakthroughs in Edge AI have paved the way for applying artificial intelligence (AI) techniques directly on board these small satellite systems, heralding a new era of AI-empowered autonomous satellites. Space agencies such as ESA and NASA have taken notice of these advancements and are actively pursuing the development of on-board AI systems. This paper investigates the application of AI to monitor satellite telemetry data on board small satellites to enable real-time detection and immediate response to anomalies. We have curated a unique dataset derived from EIRSAT-1, Ireland's first domestically produced satellite, as a testing and validation resource for these ML models and the future development of AI-enabled small satellites. This dataset consists of a training set developed during ground testing and containing artificial anomalies induced to train satellite operators, a validation dataset containing real anomalies encountered during the qualification campaign, and an early flight test dataset collected since the satellite was launched on December 1st, 2023. This paper presents an in-depth analysis of the efficacy of several ML techniques when applied to the EIRSAT-1 dataset using flight-ready hardware. This study not only showcases the capabilities of these ML techniques in an operational environment but also sets the stage for future research and development in autonomous satellite systems.},
+  langid = {english},
+  file = {/Users/lucasoliveira/Zotero/storage/QHD9GAKM/Murphy et al. - From Ground to Orbit Enhancing Satellite Autonomy With AI-Powered Anomaly Detection.pdf}
+}
+
+@online{nguyenDeployableSatelliteAnomaly2026,
+  title = {Toward {{Deployable Satellite Anomaly Detection}}: {{A Benchmark Study}} on {{Large-Scale ESA-ADB Telemetry}}},
+  shorttitle = {Toward {{Deployable Satellite Anomaly Detection}}},
+  author = {Nguyen, Andrea and Rozenberg, Dafne and Zhu, Yeying and Hu, Peng},
+  date = {2026-07-08},
+  eprint = {2607.07335},
+  eprinttype = {arXiv},
+  eprintclass = {cs.CE},
+  doi = {10.48550/arXiv.2607.07335},
+  url = {http://arxiv.org/abs/2607.07335},
+  urldate = {2026-10-28},
+  abstract = {Satellite anomaly detection is essential for maintaining mission reliability and spacecraft health, yet remains challenging due to the high-dimensional, irregular, and imbalanced nature of spacecraft telemetry data. This paper presents a systematic benchmark study evaluating supervised and unsupervised anomaly detection approaches on the large-scale ESA-ADB dataset across two mission settings of varying temporal scales. Supervised models, including Multiscale Convolutional Neural Networks (Multiscale CNN), Graph Convolutional Networks (GCN), and Graph Attention Networks (GAT), are compared against unsupervised methods, namely Elliptic Envelope (EE) and Empirical Cumulative Distribution Function-based Outlier Detection (ECOD). Beyond detection performance, we rigorously analyze computational runtime and scalability, which are critical for practical deployment in spacecraft operations. Results show that supervised models achieve stronger overall performance, while unsupervised methods offer competitive precision with significantly lower computational overhead. These findings underscore a fundamental trade-off between detection capacity and operational efficiency, offering practical guidance for mission engineers designing scalable satellite health monitoring systems.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computational Engineering Finance and Science,Electrical Engineering and Systems Science - Systems and Control},
+  file = {/Users/lucasoliveira/Zotero/storage/KIH79RTZ/Nguyen et al. - 2026 - Toward Deployable Satellite Anomaly Detection A Benchmark Study on Large-Scale ESA-ADB Telemetry.pdf}
+}
+
+@article{oliveiraUCDSatelliteAIPapers,
+  title = {{{UCD}} Satellite-{{AI}} Papers vs Your Study},
+  author = {Oliveira, Lucas},
+  langid = {english},
+  file = {/Users/lucasoliveira/Zotero/storage/VABU9MRM/Oliveira - UCD satellite-AI papers vs your study.pdf}
+}
+
+@online{parkComparativeStudyAdaptation2026,
+  title = {A {{Comparative Study}} of {{Adaptation Strategies}} for {{Time Series Foundation Models}} in {{Anomaly Detection}}},
+  author = {Park, Miseon and Yoon, Kijung},
+  date = {2026-01-01},
+  eprint = {2601.00446},
+  eprinttype = {arXiv},
+  eprintclass = {cs.LG},
+  doi = {10.48550/arXiv.2601.00446},
+  url = {http://arxiv.org/abs/2601.00446},
+  urldate = {2026-10-28},
+  abstract = {Time series anomaly detection is essential for the reliable operation of complex systems, but most existing methods require extensive task-specific training. We explore whether time series foundation models (TSFMs), pretrained on large heterogeneous data, can serve as universal backbones for anomaly detection. Through systematic experiments across multiple benchmarks, we compare zero-shot inference, full model adaptation, and parameter-efficient fine-tuning (PEFT) strategies. Our results demonstrate that TSFMs outperform task-specific baselines, achieving notable gains in AUC-PR and VUS-PR, particularly under severe class imbalance. Moreover, PEFT methods such as LoRA, OFT, and HRA not only reduce computational cost but also match or surpass full fine-tuning in most cases, indicating that TSFMs can be efficiently adapted for anomaly detection, even when pretrained for forecasting. These findings position TSFMs as promising general-purpose models for scalable and efficient time series anomaly detection.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/lucasoliveira/Zotero/storage/XGLTUC6L/Park and Yoon - 2026 - A Comparative Study of Adaptation Strategies for Time Series Foundation Models in Anomaly Detection.pdf}
+}
+
+@online{parkPaAnoPatchBasedRepresentation2026,
+  title = {{{PaAno}}: {{Patch-Based Representation Learning}} for {{Time-Series Anomaly Detection}}},
+  shorttitle = {{{PaAno}}},
+  author = {Park, Jinju and Kang, Seokho},
+  date = {2026-07-01},
+  eprint = {2602.01359},
+  eprinttype = {arXiv},
+  eprintclass = {cs.LG},
+  doi = {10.48550/arXiv.2602.01359},
+  url = {http://arxiv.org/abs/2602.01359},
+  urldate = {2026-10-28},
+  abstract = {Although recent studies on time-series anomaly detection have increasingly adopted ever-larger neural network architectures such as Transformers and Foundation models, they incur high computational costs and memory usage, making them impractical for real-time and resource-constrained scenarios. Moreover, they often fail to demonstrate significant performance gains over simpler methods under rigorous evaluation protocols. In this study, we proposePatchbased representation learning for time-seriesAnomaly detection (PaAno), a lightweight yet effective method for fast and efficient time-series anomaly detection. PaAno extracts short temporal patches from time-series training data and uses a 1D convolutional neural network to embed each patch into a vector representation. The model is trained using a combination of triplet loss and pretext loss to ensure the embeddings capture informative temporal patterns from input patches. During inference, the anomaly score at each time step is computed by comparing the embeddings of its surrounding patches to those of normal patches extracted from the training time-series. Evaluated on the TSB-AD benchmark, PaAno achieved state-of-the-art performance, significantly outperforming existing methods, including those based on heavy architectures, on both univariate and multivariate time-series anomaly detection across various rangewise and point-wise performance measures. The source code is available at https://github.com/jinnnju/PaAno.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/lucasoliveira/Zotero/storage/4KPNNJUQ/Park and Kang - 2026 - PaAno Patch-Based Representation Learning for Time-Series Anomaly Detection.pdf}
+}
+
+@online{urayExploringZeroShotFoundation2026,
+  title = {Exploring {{Zero-Shot Foundation Models}} for {{Multivariate Time Series Anomaly Detection}}},
+  author = {Uray, Martin and Messineo, Saverio and Kwitt, Roland and Huber, Stefan},
+  date = {2026-07-14},
+  eprint = {2607.12454},
+  eprinttype = {arXiv},
+  eprintclass = {cs.LG},
+  doi = {10.48550/arXiv.2607.12454},
+  url = {http://arxiv.org/abs/2607.12454},
+  urldate = {2026-10-28},
+  abstract = {Multivariate Time Series Anomaly Detection (MTSAD) is essential for reliability and safety in domains such as industrial process monitoring and financial risk management, yet conventional approaches rely on application-specific models that are costly to train and hard to scale. Foundation Models (FMs), pre-trained on broad data with strong zero-shot generalization, have recently become available for univariate time series forecasting, raising the question of whether they can address MTSAD without task-specific training. We investigate the zero-shot application of a univariate forecasting FM, TimesFM, to industrial MTSAD on the Secure Water Treatment (SWaT) benchmark, evaluating two strategies: treating the FM as a per-feature forecaster with thresholded prediction errors, and as an embedder whose intermediate representations feed standard outlier detectors. Neither of our proposed setups is competitive with established baselines; embeddings reveal only partial separation between normal and anomalous segments, insufficient for reliable detection. The cause is that the FM is too effective at capturing temporal dynamics, yielding low error even within fully anomalous windows, so persistent anomalies become indistinguishable from normal behavior. However, these observations yield valuable insights: the error peaks at anomaly boundaries, indicating FMs reliably detect distribution changes. We conclude that the proposed naive zero-shot FMs are unsuitable for MTSAD but promising for change-point detection.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/lucasoliveira/Zotero/storage/TQEMHA9Q/Uray et al. - 2026 - Exploring Zero-Shot Foundation Models for Multivariate Time Series Anomaly Detection.pdf}
+}
+
+@article{wangSurveyDeepAnomaly2025,
+  title = {A {{Survey}} of {{Deep Anomaly Detection}} in {{Multivariate Time Series}}: {{Taxonomy}}, {{Applications}}, and {{Directions}}},
+  shorttitle = {A {{Survey}} of {{Deep Anomaly Detection}} in {{Multivariate Time Series}}},
+  author = {Wang, Fengling and Jiang, Yiyue and Zhang, Rongjie and Wei, Aimin and Xie, Jingming and Pang, Xiongwen},
+  date = {2025-01-01},
+  journaltitle = {Sensors},
+  shortjournal = {Sensors},
+  volume = {25},
+  number = {1},
+  pages = {190},
+  issn = {1424-8220},
+  doi = {10.3390/s25010190},
+  url = {https://www.mdpi.com/1424-8220/25/1/190},
+  urldate = {2026-10-28},
+  abstract = {Multivariate time series anomaly detection (MTSAD) can effectively identify and analyze anomalous behavior in complex systems, which is particularly important in fields such as financial monitoring, industrial equipment fault detection, and cybersecurity. MTSAD requires simultaneously analyze temporal dependencies and inter-variable relationships have prompted researchers to develop specialized deep learning models to detect anomalous patterns. In this paper, we conducted a structured and comprehensive overview of the latest techniques in deep learning for multivariate time series anomaly detection methods. Firstly, we proposed a taxonomy for the anomaly detection strategies from the perspectives of learning paradigms and deep learning models, and then provide a systematic review that emphasizes their advantages and drawbacks. We also organized the public datasets for time series anomaly detection along with their respective application domains. Finally, open issues for future research on MTSAD were identified.},
+  langid = {english},
+  file = {/Users/lucasoliveira/Zotero/storage/EXM4C7QW/Wang et al. - 2025 - A Survey of Deep Anomaly Detection in Multivariate Time Series Taxonomy, Applications, and Directio.pdf}
+}
+
+@article{xuLargeLanguageModels,
+  title = {Large {{Language Models}} for {{Anomaly}} and {{Out}}-of-{{Distribution Detection}}: {{A Survey}}},
+  author = {Xu, Ruiyao and Ding, Kaize},
+  abstract = {Detecting anomalies or out-of-distribution (OOD) samples is critical for maintaining the reliability and trustworthiness of machine learning systems. Recently, Large Language Models (LLMs) have demonstrated their effectiveness not only in natural language processing but also in broader applications due to their advanced comprehension and generative capabilities. The integration of LLMs into anomaly and OOD detection marks a significant shift from the traditional paradigm in the field. This survey focuses on the problem of anomaly and OOD detection under the context of LLMs. We propose a new taxonomy to categorize existing approaches into two classes based on the role played by LLMs. Following our proposed taxonomy, we further discuss the related work under each of the categories and finally discuss potential challenges and directions for future research in this field. We also provide an up-todate reading list 1 of relevant papers.},
+  langid = {english},
+  file = {/Users/lucasoliveira/Zotero/storage/EVNCLW55/Xu and Ding - Large Language Models for Anomaly and Out-of-Distribution Detection A Survey.pdf}
+}
