@@ -1,0 +1,18 @@
+#!/bin/sh
+# Remove macOS AppleDouble (._*) and .DS_Store files before every commit.
+# Deletes them from the working tree and unstages any that were staged.
+
+repo_root=$(git rev-parse --show-toplevel)
+
+# Delete AppleDouble and .DS_Store files from the working tree, skipping .git/.
+find "$repo_root" -name '.git' -prune -o \
+    \( -name '._*' -o -name '.DS_Store' \) -type f -exec rm -f {} +
+
+# Unstage any such files that were added to the index.
+git diff --cached --name-only \
+    | grep -E '(^|/)(\._|\.DS_Store)' \
+    | while IFS= read -r f; do
+        git rm --cached --quiet --ignore-unmatch "$f" >/dev/null 2>&1
+    done
+
+exit 0
